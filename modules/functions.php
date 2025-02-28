@@ -1,11 +1,11 @@
 <?php
 
-// allPages returns all pages except one currently in
 function allPages($pages, $currentPage) {
-    // return all except current page
     foreach ($pages as $page) {
-        if ($page != $currentPage) {
-            echo "<a href='?page=$page'>$page</a>";
+        if ($page == $currentPage) {
+            echo "<a href='?page=$page' style='color:red;'>$page</a>&nbsp;&nbsp;&nbsp;";
+        } else {
+            echo "<a href='?page=$page'>$page</a>&nbsp;&nbsp;&nbsp;";
         }
     }
 }
