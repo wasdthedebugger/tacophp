@@ -1,0 +1,7 @@
+# Block access to the /includes directory
+<Directory "/path/to/your/includes">
+    Require all denied
+</Directory>
+
+# Disable directory listing for all directories
+Options -Indexes
